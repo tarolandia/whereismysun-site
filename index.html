@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WIMS: Where is My Sun?</title>
+  <meta name="description" content="Point your phone at the sky and see exactly where the sun is, where it has been, and where it is going. AR solar tracking for Android." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .sun {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fffbe6 0%, #ffc107 50%, #ff8f00 100%);
+      box-shadow: 0 0 60px 20px rgba(255, 193, 7, 0.3), 0 0 120px 40px rgba(255, 193, 7, 0.1);
+      margin: 0 auto 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    h1 span {
+      color: #ffc107;
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: #aaa;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .features {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      max-width: 520px;
+    }
+
+    .feature {
+      background: rgba(255, 193, 7, 0.08);
+      border: 1px solid rgba(255, 193, 7, 0.2);
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      color: #ffd54f;
+    }
+
+    .coming-soon {
+      margin-top: 3rem;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      color: #aaa;
+      letter-spacing: 0.5px;
+    }
+
+    .coming-soon strong {
+      display: block;
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    footer a {
+      color: #777;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sun"></div>
+
+  <h1>Where is My <span>Sun?</span></h1>
+
+  <p class="subtitle">
+    Point your phone at the sky and see exactly where the sun is,
+    where it has been, and where it is going — in augmented reality.
+  </p>
+
+  <div class="features">
+    <span class="feature">AR Sun Path</span>
+    <span class="feature">Eclipse Mode</span>
+    <span class="feature">Time Travel</span>
+    <span class="feature">Compare Dates</span>
+    <span class="feature">Solstice Arcs</span>
+    <span class="feature">5 Languages</span>
+  </div>
+
+  <div class="coming-soon">
+    <strong>Coming soon on Android</strong>
+    support@whereismysun.app
+  </div>
+
+  <footer>
+    <a href="/privacy">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
