@@ -83,6 +83,32 @@
     footer { margin-top: 4rem; font-size: 0.8rem; color: #555; }
     footer a { color: #777; text-decoration: none; }
     footer a:hover { color: #aaa; }
+
+    .eclipse-card {
+      margin-top: 1.5rem;
+      background: rgba(255, 193, 7, 0.06);
+      border: 1px solid rgba(255, 193, 7, 0.3);
+      border-radius: 14px;
+      padding: 1.2rem 2rem;
+      max-width: 520px;
+      width: 100%;
+    }
+    .eclipse-title {
+      color: #ffc107;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.6rem;
+    }
+    .eclipse-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.3rem 1.2rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .eclipse-features span::before { content: '· '; color: #ffc107; }
   </style>
 </head>
 <body>
@@ -106,12 +132,19 @@
 
   <div class="features">
     <span class="feature">Trajectoire AR</span>
-    <span class="feature">Compte à Rebours</span>
-    <span class="feature">Détection de Visibilité</span>
     <span class="feature">Voyage dans le Temps</span>
     <span class="feature">Comparer des Dates</span>
     <span class="feature">Arcs de Solstice</span>
     <span class="feature">5 Langues</span>
+  </div>
+
+  <div class="eclipse-card">
+    <div class="eclipse-title">Mode Eclipse</div>
+    <div class="eclipse-features">
+      <span>Compte à rebours jusqu'à l'éclipse maximale</span>
+      <span>Détection de visibilité en direct</span>
+      <span>Points de contact en RA</span>
+    </div>
   </div>
 
   <div class="coming-soon">
