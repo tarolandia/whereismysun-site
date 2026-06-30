@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>WIMS: Where is My Sun?</title>
-  <meta name="description" content="Point your phone at the sky and see exactly where the sun is, where it has been, and where it is going. AR solar tracking for Android." />
+  <title>WIMS: أين شمسي؟</title>
+  <meta name="description" content="وجّه هاتفك نحو السماء واكتشف بالضبط أين الشمس، وأين كانت، وإلى أين تتجه. تتبع الشمس بالواقع المعزز على Android." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -25,7 +25,7 @@
     .lang-switcher {
       position: fixed;
       top: 1rem;
-      right: 1.5rem;
+      left: 1.5rem;
       display: flex;
       gap: 0.4rem;
       z-index: 10;
@@ -51,31 +51,12 @@
       margin: 0 auto 2rem;
     }
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: #ffffff;
-    }
-
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; color: #ffffff; }
     h1 span { color: #ffc107; }
 
-    .subtitle {
-      margin-top: 1rem;
-      font-size: clamp(1rem, 2.5vw, 1.25rem);
-      color: #aaa;
-      max-width: 480px;
-      line-height: 1.6;
-    }
+    .subtitle { margin-top: 1rem; font-size: clamp(1rem, 2.5vw, 1.25rem); color: #aaa; max-width: 480px; line-height: 1.8; }
 
-    .features {
-      margin-top: 2.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      max-width: 520px;
-    }
+    .features { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; max-width: 520px; }
 
     .feature {
       background: rgba(255, 193, 7, 0.08);
@@ -95,22 +76,10 @@
       padding: 0.9rem 2rem;
       font-size: 1rem;
       color: #aaa;
-      letter-spacing: 0.5px;
     }
+    .coming-soon strong { display: block; color: #fff; font-size: 1.05rem; margin-bottom: 0.2rem; }
 
-    .coming-soon strong {
-      display: block;
-      color: #fff;
-      font-size: 1.05rem;
-      margin-bottom: 0.2rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: #555;
-    }
-
+    footer { margin-top: 4rem; font-size: 0.8rem; color: #555; }
     footer a { color: #777; text-decoration: none; }
     footer a:hover { color: #aaa; }
   </style>
@@ -118,38 +87,38 @@
 <body>
 
   <nav class="lang-switcher">
-    <a href="/" class="active">EN</a>
+    <a href="/">EN</a>
     <a href="/es/">ES</a>
     <a href="/fr/">FR</a>
     <a href="/pt/">PT</a>
-    <a href="/ar/">AR</a>
+    <a href="/ar/" class="active">AR</a>
   </nav>
 
   <div class="sun"></div>
 
-  <h1>Where is My <span>Sun?</span></h1>
+  <h1>أين <span>شمسي؟</span></h1>
 
   <p class="subtitle">
-    Point your phone at the sky and see exactly where the sun is,
-    where it has been, and where it is going, in augmented reality.
+    وجّه هاتفك نحو السماء واكتشف بالضبط أين الشمس،
+    وأين كانت، وإلى أين تتجه، في الواقع المعزز.
   </p>
 
   <div class="features">
-    <span class="feature">AR Sun Path</span>
-    <span class="feature">Eclipse Mode</span>
-    <span class="feature">Time Travel</span>
-    <span class="feature">Compare Dates</span>
-    <span class="feature">Solstice Arcs</span>
-    <span class="feature">5 Languages</span>
+    <span class="feature">مسار الشمس AR</span>
+    <span class="feature">وضع الكسوف</span>
+    <span class="feature">السفر عبر الزمن</span>
+    <span class="feature">مقارنة التواريخ</span>
+    <span class="feature">أقواس الانقلاب</span>
+    <span class="feature">5 لغات</span>
   </div>
 
   <div class="coming-soon">
-    <strong>Coming soon on Android</strong>
+    <strong>قريباً على Android</strong>
     support@whereismysun.app
   </div>
 
   <footer>
-    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/ar/privacy.html">سياسة الخصوصية</a>
   </footer>
 
 </body>

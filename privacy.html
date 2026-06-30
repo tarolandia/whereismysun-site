@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>Privacy Policy — WIMS: Where is My Sun?</title>
+  <title>Privacy Policy | WIMS: Where is My Sun?</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -27,22 +27,40 @@
     a:hover { text-decoration: underline; }
     hr { border: none; border-top: 1px solid #222; margin: 2rem 0; }
 
-    .meta {
-      font-size: 0.85rem;
-      color: #666;
+    .meta { font-size: 0.85rem; color: #666; margin-bottom: 2.5rem; }
+
+    .lang-switcher {
+      display: flex;
+      gap: 0.4rem;
       margin-bottom: 2.5rem;
     }
-
-    nav {
-      margin-top: 3rem;
-      font-size: 0.85rem;
+    .lang-switcher a {
+      color: #444;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
     }
+    .lang-switcher a:hover,
+    .lang-switcher a.active { color: #ffc107; }
+
+    nav.back { margin-top: 3rem; font-size: 0.85rem; }
   </style>
 </head>
 <body>
 
+  <nav class="lang-switcher">
+    <a href="/privacy.html" class="active">EN</a>
+    <a href="/es/privacy.html">ES</a>
+    <a href="/fr/privacy.html">FR</a>
+    <a href="/pt/privacy.html">PT</a>
+    <a href="/ar/privacy.html">AR</a>
+  </nav>
+
   <h1>Privacy Policy</h1>
-  <p class="meta">WIMS: Where is My Sun? &mdash; Effective date: 2026-06-29</p>
+  <p class="meta">WIMS: Where is My Sun?<br>Effective date: 2026-06-29</p>
 
   <h2>Who we are</h2>
   <p>WIMS: Where is My Sun? ("the App") is developed and operated by Lautaro Orazi ("Service Provider").</p>
@@ -100,13 +118,13 @@
   <h2>Your GDPR rights</h2>
   <p>If you are in the European Economic Area, you have the following rights under the GDPR:</p>
   <ul>
-    <li><strong>Right of access</strong> — request a copy of your personal data</li>
-    <li><strong>Right to rectification</strong> — request correction of inaccurate data</li>
-    <li><strong>Right to erasure</strong> — request deletion of your personal data</li>
-    <li><strong>Right to restrict processing</strong> — request that processing be limited</li>
-    <li><strong>Right to data portability</strong> — receive your data in a machine-readable format</li>
-    <li><strong>Right to object</strong> — object to processing based on legitimate interests</li>
-    <li><strong>Right to withdraw consent</strong> — withdraw consent at any time</li>
+    <li><strong>Right of access:</strong> request a copy of your personal data</li>
+    <li><strong>Right to rectification:</strong> request correction of inaccurate data</li>
+    <li><strong>Right to erasure:</strong> request deletion of your personal data</li>
+    <li><strong>Right to restrict processing:</strong> request that processing be limited</li>
+    <li><strong>Right to data portability:</strong> receive your data in a machine-readable format</li>
+    <li><strong>Right to object:</strong> object to processing based on legitimate interests</li>
+    <li><strong>Right to withdraw consent:</strong> withdraw consent at any time</li>
   </ul>
   <p>Because the App collects no personal data on the Service Provider's servers, most of these rights are satisfied by default. For any request, contact <a href="mailto:support@whereismysun.app">support@whereismysun.app</a>. You also have the right to lodge a complaint with your local Data Protection Authority: <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank">edpb.europa.eu</a></p>
 
@@ -133,7 +151,7 @@
   <a href="mailto:support@whereismysun.app">support@whereismysun.app</a><br />
   Valencia, Spain</p>
 
-  <nav><a href="/">&larr; Back to home</a></nav>
+  <nav class="back"><a href="/">&larr; Back to home</a></nav>
 
 </body>
 </html>
