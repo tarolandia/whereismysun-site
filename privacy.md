@@ -5,7 +5,7 @@ Effective date: 2026-06-29
 
 ## Who we are
 
-WIMS: Where is My Sun? ("the App") is developed and operated by Lautaro Orazi ("Service Provider").
+WIMS: Where is My Sun? ("the App") is developed and operated by OES Studio ("Service Provider").
 
 - Email: support@whereismysun.app
 - Address: Valencia, Spain
@@ -99,6 +99,6 @@ Previous versions are available on request at support@whereismysun.app.
 
 ## Contact
 
-Lautaro Orazi
+OES Studio
 support@whereismysun.app
 Valencia, Spain
